@@ -204,9 +204,9 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {[
-            { name: "CompTIA Security+", year: "2025–2028", status: "Completed", file: "CompTIA Security+ cc certificate.pdf" },
-            { name: "ISC² Certified in Cybersecurity (CC)", year: "2025–2028", status: "Completed", file: "isc2 certification.pdf" },
-            { name: "AWS Cloud Practitioner", year: "2025–2028", status: "Completed", file: "AWS Certified Cloud Practitioner certificate.pdf" },
+            { name: "CompTIA Security+", year: "2025–2028", status: "Completed", file: "comptia-security-plus.pdf" },
+            { name: "ISC² Certified in Cybersecurity (CC)", year: "2025–2028", status: "Completed", file: "isc2-cc.pdf" },
+            { name: "AWS Cloud Practitioner", year: "2025–2028", status: "Completed", file: "aws-cloud-practitioner.pdf" },
             { name: "CompTIA CySA+", year: "2026", status: "In Progress" },
           ].map((cert, i) => (
             <div key={i} className="bg-[#161b22] border border-gray-800 rounded-xl p-6 hover:border-emerald-500 transition">
