@@ -51,7 +51,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-gray-400 text-lg"
         >
-          Blue Team Engineer • SOC Analyst • Incident Detection & Response
+          Defensive Security • SOC Analyst • Incident Detection & Response
         </motion.p>
 
       </section>
