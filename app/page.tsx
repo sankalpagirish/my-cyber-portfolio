@@ -247,21 +247,29 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              title: "Backend Developer — Auditech Innovation Pvt. Ltd.",
+              title: "Application Security Engineer — Auditech Innovation Pvt. Ltd.",
               date: "Sep 2024 – Jun 2025",
               items: [
-                "Supported enterprise backend services and SQL databases",
-                "Performed application and system log analysis",
-                "Worked with authentication and access control logic",
+                "Designed, developed, and maintained secure backend services supporting internal applications used by 100+ users.",
+                "Implemented role-based access control (RBAC) and least-privilege permissions, reducing unauthorized access risks by 40%.", 
+                "Secured SQL databases by enforcing input validation, parameterized queries, and access controls to mitigate SQL injection and data leakage risks.", 
+                "Applied secure coding best practices aligned with OWASP principles to improve application security posture.",
+                "Analyzed application and system logs to detect anomalies, operational failures, and potential security incidents, improving incident response time by 30%.", 
+                "Assisted in security hardening of backend services, including credential protection, configuration validation, and error-handling controls.",
+                "Supported compliance and risk reduction initiatives by documenting security controls, access policies, and backend workflows.",
+                "Collaborated with cross-functional teams to troubleshoot backend issues and ensure stable deployments.",
               ],
             },
             {
-              title: "IT Intern — Auditech Innovation Pvt. Ltd.",
+              title: "IT Security Intern — Auditech Innovation Pvt. Ltd.",
               date: "Feb 2024 – Apr 2024",
               items: [
-                "Provided IT support for internal systems",
-                "Administered user access, permissions, and security policies through Active Directory and GPO",
-                "Supported routine system checks and documentation",
+                "Provided ticket-based IT support, resolving 50+ incidents related to access issues, system errors, and basic network problems.", 
+                "Supported Identity and Access Management (IAM) using Active Directory, managing user accounts, password resets, and group memberships.", 
+                "Assisted in configuring and enforcing Group Policy Objects (GPOs) to apply security policies across systems.", 
+                "Helped monitor systems for performance and availability, identifying issues before escalation.",
+                "Supported patch management activities, ensuring systems were updated to reduce vulnerability exposure.",
+                "Maintained incident tracking and IT documentation, improving clarity and response efficiency for recurring issues.",
               ],
             },
             {
@@ -280,6 +288,10 @@ export default function Home() {
                 "Worked with IoT sensors and embedded systems",
                 "Developed and tested basic IoT applications",
                 "Learned IoT security considerations",
+                "Assisted in IoT system configuration, testing, and validation across connected devices and sensors.", 
+                "Supported device communication setup and monitored sensor data flows to ensure accurate data transmission.", 
+                "Performed data integrity checks to validate sensor outputs and identify inconsistencies.",
+                "Gained exposure to IoT security risks, including unsecured endpoints, data tampering, and distributed system vulnerabilities.",
               ],
             },
             {
@@ -421,92 +433,129 @@ export default function Home() {
         </div>
       </section>
       {/* PROJECTS */}
-      <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-white text-center mb-16">
-          Projects
-        </h2>
+<section id="projects" className="max-w-6xl mx-auto px-6 py-24">
+  <h2 className="text-3xl font-bold text-white text-center mb-16">
+    Projects
+  </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+  <div className="grid md:grid-cols-2 gap-8 items-stretch">
 
-          {/* PROJECT 1 */}
-          <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4">
-            <h3 className="text-xl font-semibold text-white">
-              🔐 SOC Detection & Incident Response Lab
-            </h3>
-            <p className="text-sm text-gray-400">
-              End-to-end SOC monitoring and incident response using endpoint and network telemetry.
-            </p>
-            <ul className="list-disc list-inside text-sm space-y-1">
-              <li>Built a SOC lab using Sysmon, Wazuh, Suricata, and ELK/Splunk</li>
-              <li>Correlated endpoint and network logs to detect brute-force, malware execution, and reconnaissance</li>
-              <li>Created SIEM dashboards and MITRE ATT&CK-mapped alerts</li>
-              <li>Documented incident response findings aligned with SOC playbooks</li>
-            </ul>
-            <p className="text-sm">
-              <span className="text-emerald-400">Tools:</span> Splunk, ELK Stack, Sysmon, Wazuh, Suricata
-            </p>
-          </div>
+    {/* PROJECT 1 */}
+    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4 flex flex-col">
+      <h3 className="text-xl font-semibold text-white">
+        🔐 SOC Detection & Incident Response Lab
+      </h3>
+      <p className="text-sm text-gray-400">
+        End-to-end SOC monitoring and incident response using endpoint and network telemetry.
+      </p>
+      <ul className="list-disc list-inside text-sm space-y-1">
+        <li>Built a SOC lab using Sysmon, Wazuh, Suricata, and ELK/Splunk</li>
+        <li>Correlated endpoint and network logs to detect brute-force, malware execution, and reconnaissance</li>
+        <li>Created SIEM dashboards and MITRE ATT&CK-mapped alerts</li>
+        <li>Documented incident response findings aligned with SOC playbooks</li>
+      </ul>
+      <p className="text-sm mt-auto">
+        <span className="text-emerald-400">Tools:</span> Splunk, ELK Stack, Sysmon, Wazuh, Suricata
+      </p>
+    </div>
 
-          {/* PROJECT 2 */}
-          <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4">
-            <h3 className="text-xl font-semibold text-white">
-              🖥️ Active Directory Attack Detection & Hardening Lab
-            </h3>
-            <p className="text-sm text-gray-400">
-              Enterprise identity attack detection and remediation.
-            </p>
-            <ul className="list-disc list-inside text-sm space-y-1">
-              <li>Simulated Kerberoasting, pass-the-hash, and privilege escalation attacks</li>
-              <li>Detected malicious behavior using Windows Security Event Logs and PowerShell</li>
-              <li>Analyzed attack paths with BloodHound and assessed risks using PingCastle</li>
-              <li>Implemented least-privilege and secure authentication controls</li>
-            </ul>
-            <p className="text-sm">
-              <span className="text-emerald-400">Tools:</span> Active Directory, PowerShell, BloodHound, PingCastle
-            </p>
-          </div>
+    {/* PROJECT 2 */}
+    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4 flex flex-col">
+      <h3 className="text-xl font-semibold text-white">
+        🖥️ Active Directory Attack Detection & Hardening Lab
+      </h3>
+      <p className="text-sm text-gray-400">
+        Enterprise identity attack detection and remediation.
+      </p>
+      <ul className="list-disc list-inside text-sm space-y-1">
+        <li>Simulated Kerberoasting, pass-the-hash, and privilege escalation attacks</li>
+        <li>Detected malicious behavior using Windows Security Event Logs and PowerShell</li>
+        <li>Analyzed attack paths with BloodHound and assessed risks using PingCastle</li>
+        <li>Implemented least-privilege and secure authentication controls</li>
+      </ul>
+      <p className="text-sm mt-auto">
+        <span className="text-emerald-400">Tools:</span> Active Directory, PowerShell, BloodHound, PingCastle
+      </p>
+    </div>
 
-          {/* PROJECT 3 */}
-          <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4">
-            <h3 className="text-xl font-semibold text-white">
-              🎣 OSINT-Based Financial Phishing Investigation
-            </h3>
-            <p className="text-sm text-gray-400">
-              Threat intelligence analysis of financial phishing campaigns.
-            </p>
-            <ul className="list-disc list-inside text-sm space-y-1">
-              <li>Investigated phishing infrastructure using OSINT techniques</li>
-              <li>Analyzed domains, SSL certificates, and hosting patterns</li>
-              <li>Clustered attacker campaigns based on shared indicators</li>
-              <li>Produced executive-level threat intelligence reports</li>
-            </ul>
-            <p className="text-sm">
-              <span className="text-emerald-400">Tools:</span> OSINT, WHOIS, SSL Analysis, VirusTotal
-            </p>
-          </div>
+    {/* PROJECT 3 */}
+    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4 flex flex-col">
+      <h3 className="text-xl font-semibold text-white">
+        🎣 OSINT-Based Financial Phishing Investigation
+      </h3>
+      <p className="text-sm text-gray-400">
+        Threat intelligence analysis of financial phishing campaigns.
+      </p>
+      <ul className="list-disc list-inside text-sm space-y-1">
+        <li>Investigated phishing infrastructure using OSINT techniques</li>
+        <li>Analyzed domains, SSL certificates, and hosting patterns</li>
+        <li>Clustered attacker campaigns based on shared indicators</li>
+        <li>Produced executive-level threat intelligence reports</li>
+      </ul>
+      <p className="text-sm mt-auto">
+        <span className="text-emerald-400">Tools:</span> OSINT, WHOIS, SSL Analysis, VirusTotal
+      </p>
+    </div>
 
-          {/* PROJECT 4 */}
-          <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4">
-            <h3 className="text-xl font-semibold text-white">
-              🤖 Automated Financial Brand Abuse & Phishing Detection System
-            </h3>
-            <p className="text-sm text-gray-400">
-              Automated detection of phishing and brand abuse domains using OSINT.
-            </p>
-            <ul className="list-disc list-inside text-sm space-y-1">
-              <li>Built an automated system to detect suspicious financial phishing domains</li>
-              <li>Enriched domains using registration, SSL, and keyword intelligence</li>
-              <li>Implemented phishing risk scoring and validation</li>
-              <li>Generated executive-ready threat intelligence reports</li>
-            </ul>
-            <p className="text-sm">
-              <span className="text-emerald-400">Tools:</span> Python, OSINT, Domain Intelligence
-            </p>
-          </div>
+    {/* PROJECT 4 */}
+    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4 flex flex-col">
+      <h3 className="text-xl font-semibold text-white">
+        🤖 Automated Financial Brand Abuse & Phishing Detection System
+      </h3>
+      <p className="text-sm text-gray-400">
+        Automated detection of phishing and brand abuse domains using OSINT.
+      </p>
+      <ul className="list-disc list-inside text-sm space-y-1">
+        <li>Built an automated system to detect suspicious financial phishing domains</li>
+        <li>Enriched domains using registration, SSL, and keyword intelligence</li>
+        <li>Implemented phishing risk scoring and validation</li>
+        <li>Generated executive-ready threat intelligence reports</li>
+      </ul>
+      <p className="text-sm mt-auto">
+        <span className="text-emerald-400">Tools:</span> Python, OSINT, Domain Intelligence
+      </p>
+    </div>
 
-        </div>
-      </section>
+    {/* PROJECT 5 */}
+    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4 flex flex-col">
+      <h3 className="text-xl font-semibold text-white">
+        🌐 Web Application Security Assessment (OWASP Top 10)
+      </h3>
+      <p className="text-sm text-gray-400">
+        Comprehensive web application security testing aligned with OWASP Top 10.
+      </p>
+      <ul className="list-disc list-inside text-sm space-y-1">
+        <li>Conducted dynamic and manual testing using OWASP ZAP and Burp Suite</li>
+        <li>Identified and validated OWASP Top 10 vulnerabilities</li>
+        <li>Documented severity, impact, and remediation recommendations</li>
+        <li>Remediated issues using input validation, parameterized queries, and RBAC</li>
+      </ul>
+      <p className="text-sm mt-auto">
+        <span className="text-emerald-400">Tools:</span> OWASP ZAP, Burp Suite, Secure Coding Practices
+      </p>
+    </div>
 
+    {/* PROJECT 6 */}
+    <div className="bg-[#161b22] border border-gray-800 rounded-xl p-7 hover:border-emerald-500 transition space-y-4 flex flex-col">
+      <h3 className="text-xl font-semibold text-white">
+        🛠️ Secure SDLC Implementation with SAST & Dependency Analysis
+      </h3>
+      <p className="text-sm text-gray-400">
+        Integrated automated security testing into CI/CD workflows.
+      </p>
+      <ul className="list-disc list-inside text-sm space-y-1">
+        <li>Integrated SAST and SCA tools into CI pipelines</li>
+        <li>Mapped findings to OWASP Top 10 categories and reduced false positives</li>
+        <li>Prioritized vulnerabilities based on risk and business impact</li>
+        <li>Documented SSDLC processes and secure coding standards</li>
+      </ul>
+      <p className="text-sm mt-auto">
+        <span className="text-emerald-400">Tools:</span> SAST, SCA, CI/CD, OWASP Top 10
+      </p>
+    </div>
+
+  </div>
+</section>
       {/* CONTACT */}
       <section id="contact" className="text-center py-16 text-gray-400">
         <a href="mailto:sankalpagirish27@email.com" className="hover:text-emerald-400">
